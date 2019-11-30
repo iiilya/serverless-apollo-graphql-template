@@ -1,8 +1,9 @@
 {
-  "name": "serverless-graphql-template",
+  "name": "serverless-apollo-graphql-template",
   "version": "1.0.0",
   "description": "Boilerplate for a Serverless Graphql project",
   "keywords": [
+    "apollo",
     "boilerplate",
     "example",
     "graphql",
@@ -12,13 +13,13 @@
   "homepage": "https://github.com/iiilya/serverless-graphql-template#readme",
   "bugs": "https://github.com/iiilya/serverless-graphql-template/issues",
   "repository": "git@github.com:iiilya/serverless-graphql-template.git",
-  "license": "UNLICENSED",
-  "author": "Ilya Ivanov <ilyanov@pm.me> (https://github.com/iiilya)",
+  "license": "MIT",
+  "author": "Ilya Ivanov <ilyaivanov765@gmail.com> (https://github.com/iiilya)",
   "scripts": {
-    "deploy": "serveless deploy",
-    "dev": "serverless -r dotenv/config offline",
-    "lint": "eslint 'src/**/*'",
-    "test": "jest /src --coverage -i"
+    "deploy": "npx serverless deploy",
+    "dev": "npx serverless -r dotenv/config offline",
+    "lint": "npx eslint 'src/**/*'",
+    "test": "npx jest /src --coverage -i"
   },
   "dependencies": {
     "apollo-server-lambda": "^2.9.5",
@@ -48,6 +49,7 @@
     "typescript": "^3.6.3"
   },
   "engines": {
-    "node": "10.x || 11.x || 12.x"
+    "node": "10.x || 11.x || 12.x || 13.x",
+    "npm": "6.x"
   }
 }
