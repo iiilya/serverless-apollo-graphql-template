@@ -1,0 +1,32 @@
+# npm
+node_modules/
+
+# Compiled files
+build/
+
+# IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# OSX
+*.DS_Store
+
+# logs
+logs/
+*.log
+
+# Reports
+reports/
+
+# Node environment variables. Used by Docker. Use node.env.example as an example
+*.env
+
+# coverage
+coverage/
+
+# serverless
+.serverless/
+.build

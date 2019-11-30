@@ -1,0 +1,55 @@
+{
+  "name": "serverless-graphql-template",
+  "version": "1.0.0",
+  "description": "Boilerplate for a Serverless Graphql project",
+  "keywords": [
+    "boilerplate",
+    "example",
+    "graphql",
+    "serverless",
+    "template"
+  ],
+  "homepage": "https://github.com/iiilya/serverless-graphql-template#readme",
+  "bugs": "https://github.com/iiilya/serverless-graphql-template/issues",
+  "repository": "git@github.com:iiilya/serverless-graphql-template.git",
+  "license": "UNLICENSED",
+  "author": "Ilya Ivanov <ilyanov@pm.me> (https://github.com/iiilya)",
+  "scripts": {
+    "deploy": "serveless deploy",
+    "dev": "serverless -r dotenv/config offline",
+    "lint": "eslint 'src/**/*'",
+    "test": "jest /src --coverage -i"
+  },
+  "dependencies": {
+    "apollo-server-lambda": "^2.9.5",
+    "graceful-fs": "^4.2.2",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.33",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.11",
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
+    "@typescript-eslint/parser": "^2.3.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "husky": "^3.0.8",
+    "jest": "^24.9.0",
+    "nock": "^10.0.6",
+    "prettier": "^1.18.2",
+    "serverless": "^1.53.0",
+    "serverless-domain-manager": "^3.3.0",
+    "serverless-offline": "^5.12.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "sort-package-json": "^1.22.1",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "engines": {
+    "node": "10.x || 11.x || 12.x"
+  }
+}

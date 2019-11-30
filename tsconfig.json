@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "lib": ["es2017"],
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "target": "ES6",
+    "types": [
+      "jest"
+    ],
+    "noImplicitReturns": true,
+    "noEmit": false,
+    "outDir": "lib"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

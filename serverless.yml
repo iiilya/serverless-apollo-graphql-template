@@ -1,0 +1,26 @@
+service: serverless-graphql-template
+provider:
+  name: aws
+  stage: ${opt:stage, 'dev'}
+  runtime: nodejs10.x
+functions:
+  graphql:
+    handler: handler.graphqlHandler
+    events:
+      - http:
+          path: graphql
+          method: post
+          cors: true
+plugins:
+  - serverless-domain-manager
+  - serverless-plugin-typescript
+  - serverless-offline
+custom:
+  serverless-offline:
+    host: ${env:HOST, 'localhost'}
+    port: ${env:PORT, '3000'}
+  customDomain:
+    domainName: graphql.example.com
+    basePath: ""
+    stage: ${self:provider.stage}
+    createRoute53Record: true
